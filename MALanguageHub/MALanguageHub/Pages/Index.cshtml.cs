@@ -15,6 +15,7 @@ namespace MALanguageHub.Pages
         public List<OurProfessionals> ourProfessionals { get; set; }
         public List<StudentReviews> StudentReviews { get; set; }
         public Contactus Contact { get; set; }
+        public Settings Settings { get; set; }
 
 
         public IndexModel(MALHdbcontext _db)
@@ -30,6 +31,7 @@ namespace MALanguageHub.Pages
             StudentReviews = db.tbl_studentreviews.ToList();
             Contact = db.tbl_contactus.FirstOrDefault();
             Aboutus = db.tbl_aboutus.FirstOrDefault();
+            Settings = db.tbl_settings.FirstOrDefault();
 
         }
     }

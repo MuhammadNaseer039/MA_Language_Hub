@@ -337,6 +337,7 @@ section {
 .navbar-brand {
   width: 100px;
   height: 80px;
+ 
 }
 
 .custom-navbar .navbar-nav.navbar-nav-first {
@@ -465,6 +466,7 @@ section {
 {
     height: 350px; /* Adjusted height for mobile devices */
 }
+    
 
 .home-slider .caption {
     text-align: left;
@@ -472,6 +474,7 @@ section {
 }
 
 }
+
 
 /*---------------------------------------
       FEATURE              
@@ -545,7 +548,7 @@ section {
 }
 
 .team-info {
-  padding: 20px 30px;
+  padding: 5px 16px;
 }
 
 .team-image img {
@@ -1072,4 +1075,19 @@ footer .social-icon {
     width: inherit;
     height: inherit;
   }
+}
+
+
+.navbar-header .responsivenesss {
+    margin-top:-20px; /* Reset any margin-top */
+}
+
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+
+
+    .navbar-header .responsivenesss {
+        margin-top: 4px; /* Ensure name is centered */
+        text-align: center; /* Center the name text */
+    }
 }

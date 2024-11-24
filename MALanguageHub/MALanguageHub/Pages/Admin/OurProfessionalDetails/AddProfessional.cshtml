@@ -2,75 +2,66 @@
 @model MALanguageHub.Pages.Admin.OurProfessionalDetails.AddProfessionalModel
 @{
 }
+
 <div class="container">
     <form method="post" enctype="multipart/form-data">
         <div class="row justify-content-center">
-            <div class="col-md-4">
-                <h1>
-                    Add Professional
-                </h1>
+            <div class="col-md-8">
+                <h1 class="text-center">Add Professional</h1>
             </div>
         </div>
 
         <div class="row justify-content-center">
+            <!-- Left Column -->
             <div class="col-md-6">
-                <label asp-for="professional.Title" class="form-label"></label>
-                <input class="form-control" asp-for="professional.Title" placeholder="Enter Your Title">
-                <span asp-validation-for="professional.Title" class="text-danger"></span>
+                <div class="mb-3">
+                    <label asp-for="professional.Title" class="form-label"></label>
+                    <input class="form-control" asp-for="professional.Title" placeholder="Enter Your Title">
+                    <span asp-validation-for="professional.Title" class="text-danger"></span>
+                </div>
+              
+                <div class="mb-3">
+                    <label asp-for="professional.FacebookLink" class="form-label"></label>
+                    <input class="form-control" asp-for="professional.FacebookLink" placeholder="Enter Your Facebook Link">
+                    <span asp-validation-for="professional.FacebookLink" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="professional.WhatsAppLink" class="form-label"></label>
+                    <input class="form-control" asp-for="professional.WhatsAppLink" placeholder="Enter Your WhatsApp Number">
+                    <span asp-validation-for="professional.WhatsAppLink" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="professional.InstagramLink" class="form-label"></label>
+                    <input class="form-control" asp-for="professional.InstagramLink" placeholder="Enter Your Instagram Link">
+                    <span asp-validation-for="professional.InstagramLink" class="text-danger"></span>
+                </div>
             </div>
-        </div>
 
-        <div class="row justify-content-center">
+            <!-- Right Column -->
             <div class="col-md-6">
-                <label asp-for="professional.Description" class="form-label"></label>
-                <textarea class="form-control" asp-for="professional.Description" rows="5" placeholder="Enter Your Description"></textarea>
-                <span asp-validation-for="professional.Description" class="text-danger"></span>
-            </div>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <label asp-for="professional.FacebookLink" class="form-label"></label>
-                <input class="form-control" asp-for="professional.FacebookLink" placeholder="Enter Your Facebook Link">
-                <span asp-validation-for="professional.FacebookLink" class="text-danger"></span>
-            </div>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <label asp-for="professional.InstagramLink" class="form-label"></label>
-                <input class="form-control" asp-for="professional.InstagramLink" placeholder="Enter Your Instagram Link">
-                <span asp-validation-for="professional.InstagramLink" class="text-danger"></span>
-            </div>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <label asp-for="professional.WhatsAppLink" class="form-label"></label>
-                <input class="form-control" asp-for="professional.WhatsAppLink" placeholder="Enter Your Whatsapp Number">
-                <span asp-validation-for="professional.WhatsAppLink" class="text-danger"></span>
-            </div>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <label asp-for="professional.LinkedInLink" class="form-label"></label>
-                <input class="form-control" asp-for="professional.LinkedInLink" placeholder="Enter Your LinkedIn Profile Link">
-                <span asp-validation-for="professional.LinkedInLink" class="text-danger"></span>
-            </div>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <label asp-for="professional.ImageName" class="form-label"></label>
-                <input class="form-control" type="file" asp-for="professional.Image">
-                <span asp-validation-for="professional.Image" class="text-danger"></span>
+                <div class="mb-3">
+                    <label asp-for="professional.Description" class="form-label"></label>
+                    <textarea class="form-control" asp-for="professional.Description" rows="5" placeholder="Enter Your Description"></textarea>
+                    <span asp-validation-for="professional.Description" class="text-danger"></span>
+                </div>
+               
+                <div class="mb-3">
+                    <label asp-for="professional.LinkedInLink" class="form-label"></label>
+                    <input class="form-control" asp-for="professional.LinkedInLink" placeholder="Enter Your LinkedIn Profile Link">
+                    <span asp-validation-for="professional.LinkedInLink" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="professional.ImageName" class="form-label"></label>
+                    <input class="form-control" type="file" asp-for="professional.Image">
+                    <span asp-validation-for="professional.Image" class="text-danger"></span>
+                </div>
             </div>
         </div>
 
         <div class="row justify-content-center mt-3">
-            <div class="col-md-6">
-                <input type="submit" value="Add Professional" class="btn btn-primary" />
+            <div class="col-md-4 text-center">
+                <a href="/Admin/HomeDetails/Index" class="btn btn-secondary">Back</a>
+                <input type="submit" value="Add Professional" class="btn btn-primary">
             </div>
         </div>
     </form>

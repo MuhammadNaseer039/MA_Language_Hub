@@ -11,12 +11,12 @@ namespace MALanguageHub.Models
 
         [Required(ErrorMessage = "Title is required.")]
         [Display(Name = "Title")]
-        [MaxLength(200, ErrorMessage = "Title cannot exceed 200 characters.")]
+        [MaxLength(18, ErrorMessage = "Title cannot exceed 18 characters.")]
         public string Title { get; set; }
 
         [Required(ErrorMessage = "Description is required.")]
         [Display(Name = "Description")]
-        [MaxLength(500, ErrorMessage = "Description cannot exceed 500 characters.")]
+        [MaxLength(72, ErrorMessage = "Description cannot exceed 72 characters.")]
         public string Description { get; set; }
 
 
